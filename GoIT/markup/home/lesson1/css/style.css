@@ -1,12 +1,9 @@
 body {
 	background-color: #eeeeee;
-	
 }
 
-hr {
-	height: 1px;
-	background:#7a7a7a;
-	border: none;
+header {
+	padding: 0 10px;
 }
 
 h2 {
@@ -20,9 +17,9 @@ h2 {
 	margin: auto;
 }
 
-li {
-	line-height: 26px;
-}
+.job {
+	margin: 10px 0 15px;
+} 
 
 .cv {
 	height: 690px;
@@ -35,13 +32,22 @@ li {
 	box-shadow: 0 0 3px 0 #000000;
 }
 
-header, .reasons, .contacts, .feedback {
-	margin-left: 10px;
-	margin-right: 10px;
+hr {
+	height: 1px;
+	background:#7a7a7a;
+	border: none;
 }
 
-.job {
-	margin: 20px 0;
+ul {
+	padding-left: 25px;
 }
 
-/*letter-spacing: 110%;*/
+li:first-child {
+	margin-top: 30px;
+}
+
+.reasons, .contacts, .feedback {
+	padding: 0 10px;
+	line-height: 26px;
+}
+
