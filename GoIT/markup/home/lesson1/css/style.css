@@ -12,8 +12,7 @@ h2 {
 }
 
 .photo {
-	display: block;
-	margin: auto;
+	text-align: center;
 }
 
 .job {
