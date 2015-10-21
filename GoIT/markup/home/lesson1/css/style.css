@@ -1,9 +1,15 @@
 body {
 	background-color: #eeeeee;
+	font-size: 18px;
+	font-family: "Times New Roman", sans-serif;
 }
 
-header {
-	padding: 0 10px;
+.main {
+	width: 412px;
+	margin: auto;
+	padding: 30px 50px 40px;
+	background-color: #ffffff;
+	box-shadow: 0 0 4px 0 #9e9e9e;
 }
 
 h2 {
@@ -13,37 +19,26 @@ h2 {
 
 .photo {
 	text-align: center;
+	line-height: 0;
 }
 
 .job {
 	margin: 10px 0 15px;
-} 
-
-.cv {
-	width: 412px;
-	margin: auto;
-	padding: 30px 50px 30px;
-	font-size: 18px;
-	font-family: "Times New Roman", sans-serif;
-	background-color: #ffffff;
-	box-shadow: 0 0 4px 0 #9e9e9e;
-}
-
-hr {
-	height: 1px;
-	background:#7a7a7a;
-	border: none;
 }
 
 ul {
 	padding-left: 25px;
 }
 
-li:first-child, .fb {
+ul, .fb {
 	margin-top: 30px;
 }
 
-.reasons, .contacts, .feedback {
-	padding: 0 10px;
+header, .reasons, .contacts, .feedback {
+	padding: 0 13px;
 	line-height: 26px;
+}
+
+header, .reasons, .contacts {
+	border-bottom: 1px solid grey; 
 }
