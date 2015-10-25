@@ -1,0 +1,152 @@
+/* font-family: "OpenSansRegular"; */
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	background-color: #f9f9f9;
+	font-family: OpenSansRegular;
+}
+
+/*main page*/
+
+.main {
+	width: 968px;
+	margin: 0 auto;
+	padding: 50px 46px 60px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/*header*/
+
+.logo {
+	line-height: 0;
+}
+
+.h_menu {
+	height: 40px;
+	margin-top: 40px; 
+	padding: 0 24px;
+	background: linear-gradient(to top, #444343,#5e5e5e);
+}
+
+.h_menu li {
+	float: left;
+	margin: 0 40px;	
+}
+
+.h_menu li:first-child {
+	margin-left: 0;
+}
+
+.h_menu li a {
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+
+/*sidebar*/
+
+.sidebar {
+	width: 240px;
+	border: solid 1px #c8c8c8;
+	float: left;
+}
+
+.sidebar li {
+	height: 40px;
+	padding: 0 24px;
+	border-bottom: solid 1px #c8c8c8;
+	
+}
+
+.sidebar li:last-child {
+	border-bottom: none;
+}
+
+.sidebar li a {
+	display: block;
+	line-height: 40px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #656363;
+}
+
+
+/*content*/
+
+.container {
+	overflow: hidden;
+	padding: 40px 0 20px;
+}
+
+.item {
+	float: right;
+	width: 678px;
+	text-align: left;
+}
+
+.item_img_frame {
+	height: 400px;
+	background-color: white;
+	border: solid 1px #c8c8c8;
+	text-align: center;
+}
+
+.item_img {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+}
+
+.helper_img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0px;
+}
+
+.item_short_descr {
+	margin: 40px 24px;
+	font-size: 13px;
+	line-height: 1.5em; 
+}
+
+
+/* footer */
+
+footer {
+	height: 40px;
+	padding: 0 24px;
+	background-color: #e1e1e1;
+}
+
+footer li {
+	float: left;
+	margin: 0 40px;
+}
+
+footer li:first-child {
+	margin-left: 0;
+}
+
+footer li a, .copy_r {
+	display: block;
+	line-height: 40px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #2c2c2c;
+}
+
+.copy_r {
+	float: right;
+}
