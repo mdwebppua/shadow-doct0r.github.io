@@ -16,12 +16,16 @@ body {
 
 /*main page*/
 
+.clear_fl {
+	clear: both;
+}
+
 .main {
-	width: 968px;
+	width: 964px;
 	margin: 0 auto;
-	padding: 50px 46px 60px;
+	padding: 50px 48px 60px 48px;
 	background-color: white;
-	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 
 /*header*/
@@ -31,40 +35,44 @@ body {
 }
 
 .h_menu {
-	height: 40px;
-	margin-top: 40px; 
-	padding: 0 24px;
+	margin: 40px 0 0 0; 
 	background: linear-gradient(to top, #444343,#5e5e5e);
 }
 
 .h_menu li {
 	float: left;
-	margin: 0 40px;	
 }
 
-.h_menu li:first-child {
+.h_menu li a:first-child {
 	margin-left: 0;
 }
 
 .h_menu li a {
 	display: block;
+	margin: 0 16px 0 16px;	
+	padding: 0 24px 0 24px;
 	line-height: 40px;
 	text-decoration: none;
 	font-size: 14px;
 	color: white;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+}
+
+.h_menu li a:hover {
+	padding: 0 23px 0 23px;
+	background: linear-gradient(to top, #2e2e2e,#4a4a4a);
+	border-left: solid 1px #838383;
+	border-right: solid 1px #838383;
 }
 
 /*sidebar*/
 
 .sidebar {
-	width: 240px;
 	border: solid 1px #c8c8c8;
 	float: left;
 }
 
 .sidebar li {
-	height: 40px;
-	padding: 0 24px;
 	border-bottom: solid 1px #c8c8c8;
 	
 }
@@ -75,17 +83,28 @@ body {
 
 .sidebar li a {
 	display: block;
-	line-height: 40px;
+	width: 214px;
+	padding: 0 0 0 23px;
+	line-height: 39px;
 	font-size: 13px;
 	text-decoration: none;
 	color: #656363;
 }
 
+.sidebar li a:hover {
+	width: 202px;
+	padding: 0 0 0 35px;
+	background-color: #f9f9f9;
+	color: #2c2c2c;
+	-webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
 
 /*content*/
 
 .container {
-	overflow: hidden;
 	padding: 40px 0 20px;
 }
 
@@ -96,7 +115,7 @@ body {
 }
 
 .item_img_frame {
-	height: 400px;
+	height: 398px;
 	background-color: white;
 	border: solid 1px #c8c8c8;
 	text-align: center;
@@ -145,6 +164,10 @@ footer li a, .copy_r {
 	font-size: 13px;
 	text-decoration: none;
 	color: #2c2c2c;
+}
+
+footer li a:hover {
+	text-decoration: underline;
 }
 
 .copy_r {
