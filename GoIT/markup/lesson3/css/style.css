@@ -137,7 +137,8 @@ body {
 .item_short_descr {
 	margin: 40px 24px;
 	font-size: 13px;
-	line-height: 1.5em; 
+	line-height: 1.5em;
+	color: #2c2c2c;
 }
 
 
