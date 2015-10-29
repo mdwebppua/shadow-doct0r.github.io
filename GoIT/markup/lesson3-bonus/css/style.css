@@ -37,6 +37,10 @@ body {
 	font-size: 9px;
 	line-height: 11px;
 }
+.contacts span {
+	display: block;
+}
+
 .contacts a {
 	text-decoration: none;
 	color: inherit;
