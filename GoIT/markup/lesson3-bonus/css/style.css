@@ -1,0 +1,77 @@
+
+body {
+	background-color: #000;
+	font-family: Tahoma;
+	color: #e6e6e6;
+}
+
+.main {
+	width: 826px;
+	margin: 0 auto;
+	padding: 58px 67px 30px 67px;
+	background: url(../img/bck.jpg) center center;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*header*/
+
+.slogan {
+	padding: 0 0 0 86px;
+	font-size: 11px;
+}
+
+.logo {
+	float: left;
+	margin:  0 0 -28px 3px;
+	line-height: 0;
+}
+
+.contacts {
+	float: right;
+	margin: 87px 20px -20px 0;
+	font-size: 9px;
+	line-height: 11px;
+}
+.contacts a {
+	text-decoration: none;
+	color: inherit;
+}
+.contacts:first-line {
+	font-size: 11px;
+	line-height: 22px;
+}
+
+/*content*/
+
+.countries {
+	font-size: 15px;
+	text-align: center;
+}
+
+.countries div {
+	float: left;
+	width: 270px;
+	margin: 14px 0px 35px 0px;
+}
+
+.countries div:nth-child(3n+2) {
+	margin: 14px 8px 35px 8px; 
+}
+
+.countries a {
+	display: block;
+	line-height: 0;
+}
+
+/* footer */
+
+footer p {
+	margin: 150px 0 0 0;
+	font-size: 11px;
+	text-align: center;
+}
