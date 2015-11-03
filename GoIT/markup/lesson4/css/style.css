@@ -5,7 +5,6 @@ body {
 	font-family: Tahoma;
 }
 
-/* clearfix form rozetka.com.ua */
 .clearfix:after {
     content: ".";
     display: block;
@@ -22,59 +21,39 @@ body {
 	box-shadow: 0 3px 8px rgba(0,0,0,0.8); 
 }
 
-.top_image {
-	height: 237px;
-	border-top: 1px solid #128aa7;
-	border-bottom: 1px solid #128aa7;
-}
 
 /* header */
 
 header {
-	position: relative;
 	color: #128aa7;
 }
 
 .logo {
+	position: relative;
 	float: left;
-	margin: 9px 0 0 28px;
+	margin: 11px 0 0 28px;
 }
 
 .logo img {
-	line-height: 0;
+	display: block;
 }
 
 .slogan {
 	position: absolute;
-	top: 111px;
-	left: 100px;
+	top: 98px;
+	left: 72px;
 	font-size: 12px;
 }
 
-.contries {
-	position: absolute;
-	right: 20px;
-	bottom: 10px;
+.hd_right_sect {
+	width: 350px;
+	float: right;
+	padding: 0 30px 0 0;
 }
 
-.contries li {
-	float: left;
-	margin: 0 7px 0 7px;
-	/*width: 56px;*/
-	text-align: center;
-}
-
-.contries li a {
-	font-size: 10px;
-	text-decoration: underline;
-}
-
-.contries li a span {
-	display: block;
-}
 .contacts {
 	float: right;
-	margin: 5px 32px 0 0;
+	margin: 5px 4px 0 0;
 }
 
 .contacts span {
@@ -87,9 +66,39 @@ header {
 	line-height: 22px;
 }
 
-/*navigation*/
+.contries {
+	float: right;
+	margin: 34px 0 0 0;
+}
 
-.h_menu {
+.contries li {
+	float: left;
+}
+.contries li a img {
+	display: block;
+	margin: 0 7px 0 7px;	
+}
+
+.contries li a span {
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	text-decoration: underline; 
+	color: #128aa7;
+}
+
+/*central_part*/
+
+.top_image {
+	height: 235px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+/*-menu*/
+
+.menu {
+	padding-left: 30px;
 	background-color: #303030;
 	font-size: 14px;
 	border-top: 1px solid #cacbcb;
@@ -97,63 +106,59 @@ header {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.9);
 }
 
-.h_menu li {
+.menu li {
 	float: left; 
 	display: block;
 	position: relative; 
 }
 
-.h_menu li a {
+.menu li a {
 	display: block;
-	margin: 0 53px 0 10px;
+	padding: 0 32px;
 	line-height: 28px;
 	color: #fff;
 	text-decoration: none;
 }
 
-.h_menu>li:first-child>a {
-	margin: 0 53px 0 53px;
-}
-
-.h_menu li a:hover {
+.menu li a:hover {
 	text-decoration: underline;
 }
 
-.h_menu li ul {
+.sub_menu {
 	display: none;
 	position: absolute; 
-	left: 0;
+	left: 22px;
 	top: 28px; 
 	width: 100%;
 	background-color: #303030;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.9);
 }
 
-.h_menu li ul li {
+.sub_menu li {
 	float: none;
-	margin: 0;
 }
 
-.h_menu li ul li a {
-	margin: 0;
+.sub_menu li a {
 	padding: 0 10px 5px 10px;
 	line-height: 24px;
 }
 
-.h_menu li ul li:first-child a {
+.sub_menu li:first-child a {
 	border-top: 1px solid #000; 
 }
 
-.h_menu li:hover ul {
+.menu li:hover .sub_menu {
 	display: block;
 }
 
-/*content*/
+
+/*-content*/
 
 .content {
 	background: url(../img/content.png) repeat-y;
 	color: #424c43;
 	line-height: 24px;
+	z-index: -1;
 }
 
 .content h2 {
@@ -163,19 +168,15 @@ header {
 
 .info, .c_block, .news {
 	padding: 10px 15px;
+	float: left;
 }
 
 .info, .news {
-	float: left;
 	width: 180px;
 }
 
-.news {
-	float: right;
-}
-
 .c_block {
-	margin: 0 210px 0 210px;
+	width: 550px;
 }
 
 /*footer*/
