@@ -104,6 +104,7 @@ header {
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.9);
+	position: relative; /* for shadow visibility */
 }
 
 .menu li {
@@ -158,7 +159,6 @@ header {
 	background: url(../img/content.png) repeat-y;
 	color: #424c43;
 	line-height: 24px;
-	z-index: -1;
 }
 
 .content h2 {
