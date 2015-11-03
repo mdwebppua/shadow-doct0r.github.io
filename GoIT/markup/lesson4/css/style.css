@@ -167,8 +167,8 @@ header {
 }
 
 .info, .c_block, .news {
-	padding: 10px 15px;
 	float: left;
+	padding: 10px 15px;
 }
 
 .info, .news {
@@ -177,6 +177,10 @@ header {
 
 .c_block {
 	width: 550px;
+}
+
+.news {
+	float: right;
 }
 
 /*footer*/
