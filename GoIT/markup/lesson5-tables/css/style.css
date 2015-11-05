@@ -1,0 +1,78 @@
+body {
+	background-color: #dadada; 
+}
+
+.table {
+	padding-top: 30px;
+}
+
+/* init cells*/
+
+.pic td {
+	width: 60px;
+	background-color: #fff;
+	border: 10px solid black;
+}
+
+/* dimensions */
+
+.pic tr {
+	height: 70px;
+}
+
+.pic tr:nth-child(3) td:nth-last-child(-n+2) {
+	width: 70px;
+}
+
+/* some colums are double sized through the colspan attribute */
+
+/* some rows are double sized (height: 140px - b5 c60 b5 b5 c60 b5) */
+.pic tr:nth-child(3), .pic tr:nth-child(2) {
+	height: 140px;
+}
+
+/* half sized rows */
+.pic tr:nth-last-child(-n+2) {
+	height: 40px;
+}
+
+/* colors */
+
+/*  red: #ff5824; */
+.pic tr:nth-child(2) td:nth-child(2) {
+	background-color: #ff5824;
+}
+
+/*  blue: #054688; */
+.pic tr:nth-child(5) td:last-child {
+	background-color: #054688;
+}
+
+/*  black: #101010; */
+.pic tr:nth-child(4) td:nth-child(-n+2), 
+.pic tr:nth-child(5) td:nth-child(-n+3),
+.pic tr:nth-child(6) td:nth-last-child(-n+2)  
+{
+	background-color: #101010;
+}
+
+/*  yellow: #fff555; */
+.pic tr:first-child td:last-child, 
+.pic tr:nth-child(2) td:last-child,
+.pic tr:nth-child(5) td:first-child  
+{
+	background-color: #fff555;
+}
+
+/* position center, cut the black borders */
+.pic {
+	margin: 0 auto;
+	border: 11px solid #dadada;
+	border-collapse: collapse;
+}
+
+.pic tr:last-child, 
+.pic tr:nth-last-child(2) td:first-child 
+{
+	border-bottom: 11px solid #dadada;
+}
