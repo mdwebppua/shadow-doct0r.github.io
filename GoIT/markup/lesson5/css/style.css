@@ -31,6 +31,8 @@ body {
 	height: 0;
 }
 
+/* header */
+
 header {
 	background: url(../img/bck.png) #074f8f repeat-x;
 }
@@ -43,6 +45,8 @@ header {
 header nav, .offer, .signup {
 	float: right;
 }
+
+/* - signup links */
 
 .signup {
 	padding: 0 12px;
@@ -60,6 +64,8 @@ header nav, .offer, .signup {
 	text-decoration: none;
 }
 
+/* - client offers */
+
 .offer {
 	position: relative;	
 	padding: 0 14px 0 48px; 
@@ -75,7 +81,7 @@ header nav, .offer, .signup {
 	text-decoration: underline;
 }
 
-/* - flag icon */
+/* -- flag icon */
 .offer a::before {
 	content: '';
 	display: block;
@@ -88,7 +94,9 @@ header nav, .offer, .signup {
 	background: url(../img/flag.png) 0 0 no-repeat;
 }
 
-/* - vertical blue separator */ 
+/* - menu part */
+
+/* -- vertical blue separator */ 
 .menu::before {
 	content: "";
 	display: block;
@@ -120,8 +128,11 @@ header nav, .offer, .signup {
 /* signup form */
 
 .form {
+	position: absolute;
 	width: 560px;
-	margin: 213px auto 0;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -280px;
 	padding-bottom: 21px;
 	background-color: rgba(0,0,0,0.6);
 }
@@ -132,6 +143,8 @@ header nav, .offer, .signup {
 	text-align: center;
 	border-bottom: 2px solid #bdc5b6;
 }
+
+/* - Facebook button*/
 
 .fb_login {
 	position: relative;
@@ -154,13 +167,14 @@ header nav, .offer, .signup {
 
 .fb_login a span {
 	font-family: FacebookLetterFaces, Tahoma, sans-serif;
+	letter-spacing: 1px;
 }
 
 .fb_login a:hover {
 	box-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
-/* - vertical separator */ 
+/* -- vertical separator */ 
 .fb_login::before {
 	position: absolute;
 	height: 35px;
@@ -172,6 +186,7 @@ header nav, .offer, .signup {
 	border-right: 1px solid #4d66a6; 
 }
 
+/* -- "f" icon */ 
 .fb_login a::before {
 	position: absolute;
 	height: 21px;
@@ -184,13 +199,14 @@ header nav, .offer, .signup {
 	background-position: 0 0;
 }
 
+/* -- ">" icon */ 
 .fb_login a::after {
 	position: absolute;
 	height: 21px;
 	width:7px;
 	top: 50%;
 	right: 26px;
-	margin-top: -11px;
+	margin-top: -10px;
 	content: "";
 	background-image: url(../img/fb.png);
 	background-position: -9px 0;
@@ -202,6 +218,7 @@ header nav, .offer, .signup {
 	color: #999999;
 }
 
+/* -- separator lines*/
 .or_sep::before, 
 .or_sep::after {
 	content: "";
@@ -247,23 +264,25 @@ header nav, .offer, .signup {
 }
 
 .subscribe {
-	text-align: center;
+	width: 276px;
+	margin: 0 auto;
 }
 
 .subscribe input {
-	margin-right: 7px;
-	vertical-align: bottom;
+	float: left;
+	margin: 1px 8px 0 1px;
 }
-
 
 #signup input[type="submit"] {
 	display: block;
 	width: 149px;
-	margin: 21px auto;
+	margin: 24px auto 20px;
 	background: linear-gradient(to top, #2e7ac4,#50aedb);
 	border-radius: 2px;
 	border: 1px solid #4e9ed8;
 	line-height: 33px;
+	font-family: HelveticaNeueRoman, Tahoma, sans-serif;
+	font-size: 14px;
 	text-align: center;
 	color: #fff;
 	cursor: pointer;
