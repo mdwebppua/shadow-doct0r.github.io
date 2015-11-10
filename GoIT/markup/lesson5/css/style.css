@@ -131,6 +131,7 @@ header nav, .offer, .signup {
 .content {
 	width: 1124px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 /* signup form */
