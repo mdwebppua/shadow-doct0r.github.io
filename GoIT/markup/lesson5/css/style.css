@@ -14,7 +14,7 @@
 }
 
 body {
-	height: 100vh;  /*http://www.w3.org/TR/css3-values/#viewport-relative-lengths*/
+	/*height: 100vh;  http://www.w3.org/TR/css3-values/#viewport-relative-lengths*/
 	background: url(../img/photo.jpg) fixed top no-repeat;
 	background-size: cover;
 	background-color: #ebebeb;	
@@ -35,16 +35,11 @@ body {
 /* header */
 
 header {
-	position: absolute;
-	z-index: 2;
-	width: 100%;
 	background: url(../img/bck.png) #074f8f repeat-x;
 }
 
 .upper_line {
-	max-width: 1124px;
-	min-width: 750px;
-	width: 100%;
+	width: 1124px;
 	margin: 0 auto;
 }
 
@@ -134,19 +129,15 @@ header nav, .offer, .signup {
 /* content */
 
 .content {
-	min-height: 673px;
-	height: 100%;
-	position: relative;
+	width: 1124px;
+	margin: 0 auto;
 }
 
 /* signup form */
 
 .form {
-	position: absolute;
 	width: 560px;
-	top: 50%;
-	left: 50%;
-	margin: -299px 0 0 -280px;  /* h of form / 2 + h menu / 2 */
+	margin: 213px auto 0;
 	padding-bottom: 21px;
 	background-color: rgba(0,0,0,0.6);
 }
