@@ -316,16 +316,14 @@ body {
 
 .form_search:hover {
 	text-decoration: none;
-	border-bottom: 1px dashed #154467;
 }
 
 .form_search:focus {
 	outline: none;
-	text-shadow: 1px 1px 1px rgba(21, 68, 103, .4);
 }
 
 .form_search:active {
-	bottom: 5px;
+	text-shadow: 1px 1px 1px rgba(21, 68, 103, .4);
 }
 
 /* -- avto saerch */
@@ -827,6 +825,7 @@ main {
 	letter-spacing:normal;
 	display:inline-block;
 	margin: 0 0 0 13px; 
+	vertical-align: middle;
 }
 
 .brands_list li:first-child {
