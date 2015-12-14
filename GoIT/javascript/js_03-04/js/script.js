@@ -36,10 +36,9 @@ var quiz = {
 
 		var tag = this.newTag({name: 'div', className: 'conteiner', parentTag: document.body});
 		tag = this.newTag({name: 'div', className: 'row', parentTag: tag});
-		tag = this.newTag({name: 'form', className: 'col-lg-6 col-md-8 col-sm-10 center-block', parentTag: tag});
+		tag = this.newTag({name: 'form', className: 'col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2', parentTag: tag});
 		tag.setAttribute('role', 'form');
 		tag.setAttribute('id', 'quizForm');
-		tag.style.cssFloat = 'none';
 		this.quizForm = tag;
 		this.newTag({name: 'h3', className: 'text-center', content: heading, parentTag: this.quizForm});
 		return this; 
